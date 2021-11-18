@@ -1,0 +1,64 @@
+@import "color-variables.scss";
+
+@mixin font-title1 {
+  font: normal 500 20px/28px;
+  color: $slate-15;
+}
+
+// 二级标题
+@mixin font-title2 {
+  font: normal 500 16px/24px;
+  color: $slate-15;
+}
+
+// 三级标题
+@mixin font-title3 {
+  font: normal 500 14px/22px;
+  color: $slate-15;
+}
+
+// 次要文字
+@mixin font-cy {
+  font: normal 400 14px/22px;
+  color: $slate;
+}
+
+// 占位文字
+@mixin font-zw {
+  font: normal 400 14px/22px;
+  color: $slate-4;
+}
+
+// 辅助文字
+@mixin font-fz {
+  font: normal 400 12px/20px;
+  color: $slate;
+}
+
+// 注释文字
+@mixin font-zs {
+  font: normal 400 12px/20px;
+  color: $slate-7;
+}
+
+// 阴影
+@mixin shadow {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 10%)
+}
+
+// 边框实线
+@mixin solid {
+  border: 1px solid $slate-2;
+}
+
+// 边框虚线
+@mixin dashed {
+  border: 2px dashed $slate-2;
+}
+
+// 文字超出省略号
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -1,0 +1,21 @@
+.shadow-transition {
+  transition: $shadow-transition !important;
+}
+
+@for $z from 1 through 7 {
+  .shadow-#{$z} {
+    box-shadow: nth($shadows, $z);
+  }
+  .shadow-up-#{$z} {
+    box-shadow: nth($shadows-up, $z);
+  }
+}
+
+.no-shadow,
+.shadow-0 {
+  box-shadow: none !important;
+}
+
+.inset-shadow {
+  box-shadow: $inset-shadow !important;
+}

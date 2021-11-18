@@ -1,0 +1,112 @@
+// 以下以 1rem = 16px 举例，便于理解
+$body-font-size: 16px;
+$body-line-height: 1.5;
+$font-basic   : 1rem; // 16px
+$typography-font-family: Roboto, "Helvetica Neue", "PingFang SC", -apple-system, BlinkMacSystemFont, "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+
+$space-base   : 1rem; // 16px
+$space-x-base : $space-base;
+$space-y-base : $space-base;
+$space-none : (x: 0, y: 0);
+$space-3xs  : (x: ($space-x-base * .125), y: ($space-y-base * .125));  // 2px
+$space-2xs  : (x: ($space-x-base * .25), y: ($space-y-base * .25)); // 4px
+$space-xs   : (x: ($space-x-base * .5), y: ($space-y-base * .5)); // 8px
+$space-sm   : (x: ($space-x-base * .75), y: ($space-y-base * .75)); // 12px
+$space-md   : (x: $space-x-base, y: $space-y-base); // 16px
+$space-lg   : (x: ($space-x-base * 1.25), y: ($space-y-base * 1.25)); // 20px
+$space-xl   : (x: ($space-x-base * 1.5), y: ($space-y-base * 1.5)); // 24px;
+$space-2xl  : (x: ($space-x-base * 2), y: ($space-y-base * 2)); // 32px
+$space-3xl  : (x: ($space-x-base * 3), y: ($space-y-base * 3)); // 48px;
+$space-4xl  : (x: ($space-x-base * 4), y: ($space-y-base * 4)); // 64px
+
+$border-radius-base: 0.25rem; // 4px
+$border-base: 0.0625rem; // 1px
+$generic-hover-transition       : .3s cubic-bezier(.25, .8, .5, 1);
+$spaces: ('none': $space-none, '3xs': $space-3xs, '2xs': $space-2xs, 'xs': $space-xs, 'sm': $space-sm, 'md': $space-md, 'lg': $space-lg, 'xl': $space-xl, '2xl': $space-2xl, '3xl': $space-3xl, '4xl': $space-4xl);
+
+
+// Max width at which point
+// current size ends
+$breakpoint-xs: 599px;
+$breakpoint-sm: 1023px;
+$breakpoint-md: 1439px;
+$breakpoint-lg: 1919px;
+$sizes: ('xs': 0, 'sm': ($breakpoint-xs + 1), 'md': ($breakpoint-sm + 1), 'lg': ($breakpoint-md + 1), 'xl': ($breakpoint-lg + 1));
+//0- 599px
+$breakpoint-xs-min: 0;
+$breakpoint-xs-max: $breakpoint-xs;
+//600- 1023px
+$breakpoint-sm-min: map-get($sizes, "sm");
+$breakpoint-sm-max: $breakpoint-sm;
+// 1024-1439px;
+$breakpoint-md-min: map-get($sizes, "md");
+$breakpoint-md-max: $breakpoint-md;
+// 1440-1919px
+$breakpoint-lg-min: map-get($sizes, "lg");
+$breakpoint-lg-max: $breakpoint-lg;
+// 1920-9999px
+$breakpoint-xl-min: map-get($sizes, "xl");
+$breakpoint-xl-max: 9999px;
+
+// z-index
+$z-negative: -1;
+$z-index1: 1;
+$z-index9: 9;
+$z-index11: 11;
+$z-index99: 99;
+$z-index101: 101;
+$z-index1000: 1000;
+$z-index1001: 1001;
+$z-fullscreen : 6000;
+$z-top: 7000;
+$z-max: 9999;
+$index: ('z-1': $z-index1,'z-9': $z-index9,'z-11': $z-index11,'z-99': $z-index99, 'z-101': $z-index101,'z-fullscreen': $z-fullscreen,'z-top': $z-top, 'z-max': $z-max, 'z-negative': $z-negative);
+
+// 文本
+$h1:        (size: 2.25rem, line-height: 1.5, letter-spacing: normal, weight: 700); // 36px
+$h2:        (size: 2rem,    line-height: 1.5, letter-spacing: normal, weight: 700); // 32px
+$h3:        (size: 1.75rem, line-height: 1.5, letter-spacing: normal, weight: 700); // 28px
+$h4:        (size: 1.5rem,  line-height: 1.5, letter-spacing: normal, weight: 700); // 24px
+$h5:        (size: 1.25rem, line-height: 1.5, letter-spacing: normal, weight: 700); // 20px
+$h6:        (size: 1rem,    line-height: 1.5, letter-spacing: normal, weight: 700); // 16px
+$subtitle1: (size: 1rem,    line-height: 1.5, letter-spacing: normal, weight: 400); // 16px
+$subtitle2: (size: .875rem, line-height: 1.5, letter-spacing: normal, weight: 400); // 14px
+$body1:     (size: 1rem,    line-height: 1.5, letter-spacing: normal, weight: 400); // 16px
+$body2:     (size: .875rem, line-height: 1.5, letter-spacing: normal, weight: 400); // 14px
+$overline:  (size: .75rem,  line-height: 1.5, letter-spacing: normal, weight: 400); // 12px
+$caption:   (size: .75rem,  line-height: 1.5, letter-spacing: normal, weight: 400); // 12px
+
+$headings: ('h1': $h1, 'h2': $h2, 'h3': $h3, 'h4': $h4, 'h5': $h5, 'h6': $h6, 'subtitle1': $subtitle1, 'subtitle2': $subtitle2, 'body1': $body1, 'body2': $body2, 'overline': $overline, 'caption': $caption);
+$h-tags: (h1: map-get($headings, "h1"), h2: map-get($headings, "h2"), h3: map-get($headings, "h3"), h4: map-get($headings, "h4"), h5: map-get($headings, "h5"), h6: map-get($headings, "h6"));
+$text-weights: (regular: 400, bold: 700, lighter: lighter, bolder: bolder);
+
+
+// box-shadow: h-shadow v-shadow blur spread color inset;
+$shadow-color         : #000;
+$shadow-transition    : box-shadow .28s cubic-bezier(.4, 0, .2, 1);
+$inset-shadow         : 0 7px 9px -7px rgba($shadow-color, .7) inset;
+
+$elevation-umbra      : rgba(0,0,0,0.08);
+$elevation-penumbra   : rgba($shadow-color, .12);
+$elevation-ambient    : rgba($shadow-color, .1);
+
+$shadow-0  : 0 1px 2px $elevation-umbra, 1px 0 2px $elevation-umbra;
+$shadow-1  : 0 1px 3px $elevation-umbra, 0 1px 1px $elevation-penumbra, 0 2px 1px -1px $elevation-ambient;
+$shadow-2  : 0 1px 5px $elevation-umbra, 0 2px 2px $elevation-penumbra, 0 3px 1px -2px $elevation-ambient;
+$shadow-3  : 0 1px 8px $elevation-umbra, 0 3px 4px $elevation-penumbra, 0 3px 3px -2px $elevation-ambient;
+$shadow-4  : 0 2px 4px -1px $elevation-umbra, 0 4px 5px $elevation-penumbra, 0 1px 10px $elevation-ambient;
+$shadow-5  : 0 3px 5px -1px $elevation-umbra, 0 5px 8px $elevation-penumbra, 0 1px 14px $elevation-ambient;
+$shadow-6  : 0 3px 5px -1px $elevation-umbra, 0 6px 10px $elevation-penumbra, 0 1px 18px $elevation-ambient;
+$shadow-7  : 0 4px 5px -2px $elevation-umbra, 0 7px 10px 1px $elevation-penumbra, 0 2px 16px 1px $elevation-ambient;
+
+$shadows: ($shadow-0, $shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7);
+
+$shadow-up-1  : 0 -1px 3px $elevation-umbra, 0 -1px 1px $elevation-penumbra, 0 -2px 1px -1px $elevation-ambient;
+$shadow-up-2  : 0 -1px 5px $elevation-umbra, 0 -2px 2px $elevation-penumbra, 0 -3px 1px -2px $elevation-ambient;
+$shadow-up-3  : 0 -1px 8px $elevation-umbra, 0 -3px 4px $elevation-penumbra, 0 -3px 3px -2px $elevation-ambient;
+$shadow-up-4  : 0 -2px 4px -1px $elevation-umbra, 0 -4px 5px $elevation-penumbra, 0 -1px 10px $elevation-ambient;
+$shadow-up-5  : 0 -3px 5px -1px $elevation-umbra, 0 -5px 8px $elevation-penumbra, 0 -1px 14px $elevation-ambient;
+$shadow-up-6  : 0 -3px 5px -1px $elevation-umbra, 0 -6px 10px $elevation-penumbra, 0 -1px 18px $elevation-ambient;
+$shadow-up-7  : 0 -4px 5px -2px $elevation-umbra, 0 -7px 10px 1px $elevation-penumbra, 0 -2px 16px 1px $elevation-ambient;
+
+$shadows-up: ($shadow-up-1, $shadow-up-2, $shadow-up-3, $shadow-up-4, $shadow-up-5, $shadow-up-6, $shadow-up-7);

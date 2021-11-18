@@ -1,0 +1,237 @@
+// opacity
+$light-5: rgba(255, 255, 255, 0.05);
+$light-15: rgba(255, 255, 255, 0.15);
+$light-25: rgba(255, 255, 255, 0.25);
+$light-50: rgba(255, 255, 255, 0.5);
+$light-75: rgba(255, 255, 255, 0.75);
+$light-85: rgba(255, 255, 255, 0.85);
+$light-95: rgba(255, 255, 255, 0.95);
+
+$dark-5: rgba(0, 0, 0, 0.05);
+$dark-15: rgba(0, 0, 0, 0.15);
+$dark-25: rgba(0, 0, 0, 0.25);
+$dark-50: rgba(0, 0, 0, 0.5);
+$dark-75: rgba(0, 0, 0, 0.75);
+$dark-85: rgba(0, 0, 0, 0.85);
+$dark-95: rgba(0, 0, 0, 0.95);
+
+// chromatic
+// 红色
+$red : #F40B17;
+$red-1 : #FEE7E8;
+$red-2 : #FBB0B4;
+$red-3 : #F97980;
+$red-4 : #F6424B;
+$red-5 : #F40B17;
+$red-6 : #C90913;
+$red-7 : #9F070F;
+$red-8 : #74050B;
+$red-9 : #490307;
+
+// 火山色
+$volcano : #F95E29;
+$volcano-1 : #FEECE6;
+$volcano-2 : #FDC2AE;
+$volcano-3 : #FC9876;
+$volcano-4 : #FB6D3E;
+$volcano-5 : #F95E29;
+$volcano-6 : #CE3705;
+$volcano-7 : #A22C04;
+$volcano-8 : #772003;
+$volcano-9 : #4B1402;
+
+// 橘色
+$orange : #FA8405;
+$orange-1 : #FEF3E6;
+$orange-2 : #FDD7AE;
+$orange-3 : #FCBB76;
+$orange-4 : #FBA03E;
+$orange-5 : #FA8405;
+$orange-6 : #CE6D04;
+$orange-7 : #A25603;
+$orange-8 : #773F03;
+$orange-9 : #4B2802;
+
+// 金色
+$gold : #FAA805;
+$gold-1 : #FEF6E6;
+$gold-2 : #FDE3AE;
+$gold-3 : #FCCF76;
+$gold-4 : #FBBB3D;
+$gold-5 : #FAA805;
+$gold-6 : #CE8A04;
+$gold-7 : #A26D03;
+$gold-8 : #775003;
+$gold-9 : #4B3202;
+
+// 黄色
+$yellow : #FAD905;
+$yellow-1 : #FEFBE6;
+$yellow-2 : #FDF3AE;
+$yellow-3 : #FCEA76;
+$yellow-4 : #FBE13D;
+$yellow-5 : #FAD905;
+$yellow-6 : #CEB304;
+$yellow-7 : #A28D03;
+$yellow-8 : #776703;
+$yellow-9 : #4B4102;
+
+// 酸橙色
+$lime : #C8D926;
+$lime-1 : #FAFBE9;
+$lime-2 : #EDF3B9;
+$lime-3 : #E1EA88;
+$lime-4 : #D5E157;
+$lime-5 : #C8D926;
+$lime-6 : #A5B320;
+$lime-7 : #828D19;
+$lime-8 : #5F6712;
+$lime-9 : #3C410B;
+
+// 绿色
+$green : #4DB251;
+$green-1 : #EDF7EE;
+$green-2 : #C5E6C7;
+$green-3 : #9DD59F;
+$green-4 : #75C378;
+$green-5 : #4DB251;
+$green-6 : #409343;
+$green-7 : #327435;
+$green-8 : #255427;
+$green-9 : #173518;
+
+// 青色
+$cyan : #00E2FF;
+$cyan-1 : #E5FCFF;
+$cyan-2 : #ACF6FF;
+$cyan-3 : #73EFFF;
+$cyan-4 : #39E9FF;
+$cyan-5 : #00E2FF;
+$cyan-6 : #00BBD2;
+$cyan-7 : #0093A6;
+$cyan-8 : #006B79;
+$cyan-9 : #00444D;
+
+// 海洋色
+$ocean : #0084FF;
+$ocean-1 : #E5F3FF;
+$ocean-2 : #ACD7FF;
+$ocean-3 : #73BCFF;
+$ocean-4 : #39A0FF;
+$ocean-5 : #0084FF;
+$ocean-6 : #006DD2;
+$ocean-7 : #0056A6;
+$ocean-8 : #003F79;
+$ocean-9 : #00284D;
+
+// 蓝色
+$blue : #1243ED;
+$blue-1 : #E7ECFD;
+$blue-2 : #B2C2F9;
+$blue-3 : #7C97F5;
+$blue-4 : #476DF1;
+$blue-5 : #1243ED;
+$blue-6 : #0E37C4;
+$blue-7 : #0B2B9A;
+$blue-8 : #082071;
+$blue-9 : #051447;
+
+// 紫色
+$purple : #722ED1;
+$purple-1 : #F1EAFA;
+$purple-2 : #D1BBF0;
+$purple-3 : #B18CE6;
+$purple-4 : #925DDB;
+$purple-5 : #722ED1;
+$purple-6 : #5E26AC;
+$purple-7 : #4A1E88;
+$purple-8 : #361663;
+$purple-9 : #220E3F;
+
+// 紫罗兰色
+$violet : #B315EA;
+$violet-1 : #F7E8FD;
+$violet-2 : #E6B3F8;
+$violet-3 : #D57EF3;
+$violet-4 : #C44AEF;
+$violet-5 : #B315EA;
+$violet-6 : #9411C1;
+$violet-7 : #740E98;
+$violet-8 : #550A6F;
+$violet-9 : #360646;
+
+// 紫红色
+$magenta : #E9168A;
+$magenta-1 : #FDE8F3;
+$magenta-2 : #F8B3D9;
+$magenta-3 : #F37FBE;
+$magenta-4 : #EE4BA4;
+$magenta-5 : #E9168A;
+$magenta-6 : #C01271;
+$magenta-7 : #970F59;
+$magenta-8 : #6E0B41;
+$magenta-9 : #460729;
+
+// neutral
+// 灰色
+$grey : #808080;
+$grey-1 : #F6F6F6;
+$grey-2 : #E7E7E7;
+$grey-3 : #D8D8D8;
+$grey-4 : #CACACA;
+$grey-5 : #BBBBBB;
+$grey-6 : #ACACAC;
+$grey-7 : #9D9D9D;
+$grey-8 : #8E8E8E;
+$grey-9 : #808080;
+$grey-10 : #747474;
+$grey-11 : #696969;
+$grey-12 : #5E5E5E;
+$grey-13 : #535353;
+$grey-14 : #484848;
+$grey-15 : #3D3D3D;
+$grey-16 : #313131;
+$grey-17 : #262626;
+
+// 石板色
+$slate : #768089;
+$slate-1 : #F1F2F3;
+$slate-2 : #E2E4E6;
+$slate-3 : #D3D6D9;
+$slate-4 : #C3C7CB;
+$slate-5 : #B4B9BE;
+$slate-6 : #A4ABB1;
+$slate-7 : #959DA3;
+$slate-8 : #868E96;
+$slate-9 : #768089;
+$slate-10 : #6C757D;
+$slate-11 : #626A71;
+$slate-12 : #575E65;
+$slate-13 : #4D5359;
+$slate-14 : #42484D;
+$slate-15 : #383D41;
+$slate-16 : #2E3235;
+$slate-17 : #232629;
+
+$primary   : $ocean;
+$secondary : $slate;
+$accent    : $magenta;
+$white     : #FFFFFF;
+$black     : #000000;
+
+$positive  : $green;
+$negative  : $volcano;
+$info      : $ocean;
+$warning   : $orange;
+
+
+$separator-color         : $slate-3;
+$separator-dark-color    : $light-25;
+
+$dimmed-background       : $dark-50;
+$light-dimmed-background : $light-50;
+
+// used by dark mode
+$dark-page : darken($slate-17, 3%);
+$dark      : $slate-14;
+$teal: $cyan-3;

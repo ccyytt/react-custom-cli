@@ -1,0 +1,14 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/assets/images/LoginBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-btn {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
